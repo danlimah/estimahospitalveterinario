@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Antic);
+@import url(https://fonts.googleapis.com/css?family=Arya:400,700);
+/* 
+Programacao: Daniel Lima
+Contato: daniel@zimpbox.com
+www.zimpbox.com
+*/
+h1, h2, h3, h4, h5, h6, small, .lead, .navbar a {
+  font-family: "Arya", sans-serif; }
+
+body {
+  font-family: "Antic", sans-serif; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background: #005A48;
+  color: #ffffff; }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent; }
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav >
+.active > a, .navbar-inverse .navbar-nav >
+.active > a:hover, .navbar-inverse .navbar-nav >
+.active > a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7); }
+
+.footer, .navbar {
+  background: #005A48;
+  color: rgba(255, 255, 255, 0.7); }
+  .footer a, .navbar a {
+    color: rgba(255, 255, 255, 0.7); }
+
+.carousel-caption .btn {
+  -webkit-animation-delay: 1.5s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1.5s;
+  background: transparent;
+  border-color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+  padding-right: 30px;
+  padding-left: 30px; }
+  .carousel-caption .btn:hover, .carousel-caption .btn:focus, .carousel-caption .btn:active {
+    background: rgba(255, 255, 255, 0.3); }
+
+.navbar a {
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+.mobile_logotipo {
+  background: #005A48;
+  width: 100%;
+  text-align: center;
+  display: none; }
+
+@media screen and (max-width: 991px) {
+  .group2 {
+    pointer-events: none; }
+
+  .mobile_logotipo {
+    display: block !important; } }
+.navbar-toggle {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  padding: 17px; }
+
+@media screen and (max-width: 768px) {
+  .navbar-right {
+    margin-top: -10px; } }
+@media screen and (min-width: 992px) {
+  .top_desktop {
+    margin-top: 140px; }
+
+  /* Fixar Menu no Topo */
+  .topo_fixo {
+    width: 100%;
+    position: fixed;
+    z-index: 900;
+    top: 36px; }
+
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .navbar-nav-center {
+    width: 100%;
+    text-align: center;
+    margin-top: -95px;
+    margin-bottom: -50px; }
+
+  .navbar-right {
+    margin-top: -61px; } }
+.titulo_paginas:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #005A48;
+  margin-top: 11px;
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=site.css.map */

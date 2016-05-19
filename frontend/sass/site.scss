@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Antic);
+// font-family: 'Antic', sans-serif;
+
+@import url(https://fonts.googleapis.com/css?family=Arya:400,700);
+// font-family: 'Arya', sans-serif;
+
+/* 
+Programacao: Daniel Lima
+Contato: daniel@zimpbox.com
+www.zimpbox.com
+*/
+
+// Variaveis
+$paleta: #005A48;
+$br: #ffffff;
+$pt: #000000;
+$fonte1: 'Arya', sans-serif;
+$fonte2: 'Antic', sans-serif;
+// Fim: Variaveis
+
+h1, h2, h3, h4, h5, h6, small, .lead, .navbar a {
+	font-family: $fonte1;
+}
+
+body {
+	font-family: $fonte2;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background: $paleta;
+	color: $br;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > 
+.active > a, .navbar-inverse .navbar-nav > 
+.active > a:hover, .navbar-inverse .navbar-nav > 
+.active > a:focus {
+	background-color: rgba(0,0,0,.3);
+	color: rgba(255,255,255,.7);
+}
+
+.footer, .navbar {
+	background: $paleta;
+	color: rgba(255,255,255,.7);
+
+	a {
+		color: rgba(255,255,255,.7);
+	}
+}
+
+.carousel-caption .btn {
+	-webkit-animation-delay: 1.5s; /* Chrome, Safari, Opera */
+	animation-delay: 1.5s;
+	background: transparent;
+    border-color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    &:hover, &:focus, &:active {
+    	background: rgba(255,255,255,.3)
+    }
+}
+
+
+.navbar {
+	a {
+		text-transform: uppercase;
+    	letter-spacing: 1px;
+	}	
+}
+
+
+// Carousel Fade Transition
+.carousel-fade {
+	.carousel-inner {
+		.item {
+			transition-property: opacity;
+		}
+		
+		.item,
+		.active.left,
+		.active.right {
+			opacity: 0;
+		}
+
+		.active,
+		.next.left,
+		.prev.right {
+			opacity: 1;
+		}
+
+		.next,
+		.prev,
+		.active.left,
+		.active.right {
+			left: 0;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	.carousel-control {
+		z-index: 2;
+	}
+}
+// Fim: Carousel Fade Transition
+
+.mobile_logotipo {
+	background: $paleta;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+
+@media screen and (max-width: 991px) {
+	.group2 {
+		pointer-events: none;
+	}
+	.mobile_logotipo {
+		display: block !important;
+	}
+
+}
+
+.navbar-toggle {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    border: none!important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    padding: 17px;
+}
+
+@media screen and (max-width: 768px) {
+.navbar-right {
+	margin-top: -10px;
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+
+	.top_desktop {
+		margin-top: 140px;
+	}
+
+	/* Fixar Menu no Topo */
+	.topo_fixo {
+		width: 100%;
+		position: fixed;
+		z-index: 900;
+		top: 36px;
+	}
+
+	.navbar {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.navbar-nav-center {
+		width: 100%;
+		text-align: center;
+		margin-top: -95px;
+		margin-bottom: -50px
+	}
+
+	.navbar-right {
+		margin-top: -61px;
+	}
+}
+
+.titulo_paginas {
+	&:after {
+		content: '';
+	  	display: block;
+	  	width: 80px;
+	  	height: 3px;
+	  	background: $paleta;
+	  	margin-top: 11px;
+    	margin-bottom: 30px;
+	}
+}
